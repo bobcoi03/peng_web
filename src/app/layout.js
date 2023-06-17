@@ -13,22 +13,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="lofi">
-      <Script 
-        src="https://www.googletagmanager.com/gtag/js?id=G-SR2GKD7F07"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {
-          `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-SR2GKD7F07');
-          `
-        }
-      </Script>
       <head>
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=G-SR2GKD7F07"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {
+            `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-SR2GKD7F07');
+            `
+          }
+        </Script>
         <title>Peng</title>
         <link rel="icon" type="image/x-icon" href="/iconP.png"/>
       </head>
