@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Peng6',
+  title: 'Peng',
   description: 'Daily photo challenges with friends',
 }
 
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="lofi">
       <head>
-        <title>Peng6</title>
+        <title>Peng</title>
         <link rel="icon" type="image/x-icon" href="/iconP.png"/>
       </head>
       <body className={inter.className}>
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
             <img src="/iconP.png" className='h-7'/>
           </div>
           <div className='navbar-center'>
-            <a className='text-2xl font-semibold text-black'>Peng6</a>
+            <a className='text-2xl font-semibold text-black'>Peng</a>
           </div>
           <div className='navbar-end'/>
         </div>
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <footer className="footer p-10 bg-base-200 text-base-content">
           <div>
             <img src='/iconP.png' className='h-7'/>
-            <p>Peng6<br/></p>
+            <p>Peng<br/></p>
           </div> 
           <div>
             <span className="footer-title">Legal</span> 

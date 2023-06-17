@@ -15,7 +15,7 @@ export default function Home() {
               </a>
             </span>
           </div>
-          <img src="/cropped-screenshot.png" className="max-w-full sm:max-w-sm h-1/2"/>
+          <img src="/cropped-screenshot.png" className="max-w-full sm:max-w-sm h-1/2 max-h-96"/>
         </div>
       </div>
     </main>
