@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="navbar bg-base-100">
           <div className='navbar-start'>
-            <img src="/iconP.png" className='h-7'/>
+            <Link href={"/"}>
+              <img src="/iconP.png" className='h-7'/>
+            </Link>
           </div>
           <div className='navbar-center'>
             <a className='text-2xl font-semibold text-black'>Peng</a>
@@ -34,6 +37,9 @@ export default function RootLayout({ children }) {
           <div>
             <span className="footer-title">Legal</span> 
             <a className="link link-hover" href='https://www.freeprivacypolicy.com/live/b24234eb-f6b7-4976-9f54-4edf00726cbb' target='_blank'>Privacy policy</a> 
+            <Link href={"/support"}>
+              <p className="link link-hover" target='_blank'>Support</p>             
+            </Link>
           </div>
           <div>
             <span className="footer-title">More</span> 
