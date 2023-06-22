@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
             `
           }
         </Script>
+        <script defer data-domain="pengapp.pics" src="https://plausible.io/js/script.js"></script>
         <title>Peng</title>
         <link rel="icon" type="image/x-icon" href="/iconP.png"/>
       </head>
